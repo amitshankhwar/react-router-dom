@@ -4,6 +4,7 @@ import Register from "./pages/Register";
 import Contactus from "./pages/ContactUs";
 import Navbar from "./pages/Navbar";
 import Welcome from "./pages/Welcome";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/contact" element={<Contactus />} />
           </Route>
+
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </>
